@@ -1,4 +1,4 @@
-package com.bgasparotto.filedownloader.service;
+package com.brunocaramelo.filedownloader.service;
 
 import static org.apache.commons.lang3.StringUtils.substringAfterLast;
 

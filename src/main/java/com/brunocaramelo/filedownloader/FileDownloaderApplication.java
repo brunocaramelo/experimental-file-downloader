@@ -1,4 +1,4 @@
-package com.bgasparotto.filedownloader;
+package com.brunocaramelo.filedownloader;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;

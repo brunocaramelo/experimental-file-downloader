@@ -1,10 +1,10 @@
-package com.bgasparotto.filedownloader.service;
+package com.brunocaramelo.filedownloader.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import com.bgasparotto.filedownloader.model.DistributedFile;
+import com.brunocaramelo.filedownloader.model.DistributedFile;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;

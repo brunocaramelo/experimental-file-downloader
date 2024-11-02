@@ -1,9 +1,9 @@
-package com.bgasparotto.filedownloader.messaging.consumer;
+package com.brunocaramelo.filedownloader.messaging.consumer;
 
-import com.bgasparotto.filedownloader.message.DownloadableFile;
-import com.bgasparotto.filedownloader.model.DistributedFile;
-import com.bgasparotto.filedownloader.service.FileDownloaderService;
-import com.bgasparotto.filedownloader.service.FilePublisherService;
+import com.brunocaramelo.filedownloader.message.DownloadableFile;
+import com.brunocaramelo.filedownloader.model.DistributedFile;
+import com.brunocaramelo.filedownloader.service.FileDownloaderService;
+import com.brunocaramelo.filedownloader.service.FilePublisherService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

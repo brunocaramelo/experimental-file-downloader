@@ -1,4 +1,4 @@
-package com.bgasparotto.filedownloader.service;
+package com.brunocaramelo.filedownloader.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -10,7 +10,7 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withStatus;
 
-import com.bgasparotto.filedownloader.model.DistributedFile;
+import com.brunocaramelo.filedownloader.model.DistributedFile;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;

@@ -1,7 +1,7 @@
-package com.bgasparotto.filedownloader.service;
+package com.brunocaramelo.filedownloader.service;
 
-import com.bgasparotto.filedownloader.model.DistributedFile;
-import com.bgasparotto.filedownloader.service.exception.DistributedFileSystemException;
+import com.brunocaramelo.filedownloader.model.DistributedFile;
+import com.brunocaramelo.filedownloader.service.exception.DistributedFileSystemException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;

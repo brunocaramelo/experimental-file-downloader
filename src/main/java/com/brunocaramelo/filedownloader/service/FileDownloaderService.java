@@ -1,6 +1,6 @@
-package com.bgasparotto.filedownloader.service;
+package com.brunocaramelo.filedownloader.service;
 
-import com.bgasparotto.filedownloader.model.DistributedFile;
+import com.brunocaramelo.filedownloader.model.DistributedFile;
 import java.io.InputStream;
 import java.net.URI;
 import java.nio.file.Path;

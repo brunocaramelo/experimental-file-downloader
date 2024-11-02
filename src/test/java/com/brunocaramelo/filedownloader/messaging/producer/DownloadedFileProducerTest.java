@@ -1,9 +1,9 @@
-package com.bgasparotto.filedownloader.messaging.producer;
+package com.brunocaramelo.filedownloader.messaging.producer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.bgasparotto.filedownloader.message.DownloadedFile;
-import com.bgasparotto.spring.kafka.avro.test.EmbeddedKafkaAvro;
+import com.brunocaramelo.filedownloader.message.DownloadedFile;
+import com.brunocaramelo.spring.kafka.avro.test.EmbeddedKafkaAvro;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

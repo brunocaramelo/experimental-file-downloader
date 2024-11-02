@@ -1,4 +1,4 @@
-package com.bgasparotto.filedownloader.model;
+package com.brunocaramelo.filedownloader.model;
 
 import java.nio.file.Path;
 import lombok.Value;

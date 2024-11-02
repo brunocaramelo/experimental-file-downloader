@@ -1,0 +1,27 @@
+name: build
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: isbang/compose-action@v0.1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '11'
+      - run: ./gradlew test
+  sonar:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Disables shallow clone to improve relevancy of reporting
+      - uses: isbang/compose-action@v0.1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '11'
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: ./gradlew test jacocoTestReport sonarqube

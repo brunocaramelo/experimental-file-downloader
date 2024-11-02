@@ -1,6 +1,6 @@
-package com.bgasparotto.filedownloader.messaging.producer;
+package com.brunocaramelo.filedownloader.messaging.producer;
 
-import com.bgasparotto.filedownloader.message.DownloadedFile;
+import com.brunocaramelo.filedownloader.message.DownloadedFile;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

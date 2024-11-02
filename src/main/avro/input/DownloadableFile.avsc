@@ -1,5 +1,5 @@
 {
-  "namespace": "com.bgasparotto.filedownloader.message",
+  "namespace": "com.brunocaramelo.filedownloader.message",
   "type": "record",
   "name": "DownloadableFile",
   "fields": [

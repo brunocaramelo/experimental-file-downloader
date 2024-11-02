@@ -1,4 +1,4 @@
-package com.bgasparotto.filedownloader.service.exception;
+package com.brunocaramelo.filedownloader.service.exception;
 
 public class DistributedFileSystemException extends RuntimeException {
 
