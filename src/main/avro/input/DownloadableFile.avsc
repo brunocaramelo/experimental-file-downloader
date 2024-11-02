@@ -1,0 +1,22 @@
+{
+  "namespace": "com.bgasparotto.filedownloader.message",
+  "type": "record",
+  "name": "DownloadableFile",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "avro.java.string": "String"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "avro.java.string": "String"
+    },
+    {
+      "name": "uri",
+      "type": "string",
+      "avro.java.string": "String"
+    }
+  ]
+}

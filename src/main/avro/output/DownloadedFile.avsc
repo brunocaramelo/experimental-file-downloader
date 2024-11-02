@@ -1,0 +1,17 @@
+{
+  "namespace": "com.bgasparotto.filedownloader.message",
+  "type": "record",
+  "name": "DownloadedFile",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "avro.java.string": "String"
+    },
+    {
+      "name": "path",
+      "type": "string",
+      "avro.java.string": "String"
+    }
+  ]
+}

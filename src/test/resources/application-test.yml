@@ -1,0 +1,3 @@
+hdfs:
+  output:
+    path: /test/hansard/raw/

@@ -1,0 +1,45 @@
+server:
+  port: 10001
+
+topics:
+  input:
+    downloadable-file: message.hansard-reader.downloadable-file
+  output:
+    downloaded-file: message.file-downloader.downloaded-file
+
+hdfs:
+  uri: ${HDFS_SERVER_HOST:"localhost:9002"}
+  output:
+    path: /hansard/raw/
+
+spring:
+  datasource:
+    driver-class-name: ${SPRING_DATASOURCE_DRIVER_CLASS_NAME:"org.postgresql.Driver"}
+    url: ${SPRING_DATASOURCE_URL:"jdbc:postgresql://localhost:5434/file_downloader"}
+    username: ${DATABASE_USER:"postgres"}
+    password: ${DATABASE_PASSWORD:"password"}
+  flyway:
+    enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVER_HOST:"localhost:9092"}
+    consumer:
+      group-id: file-downloader
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        specific:
+          avro:
+            reader: true
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    listener:
+      missing-topics-fatal: false
+    properties:
+      schema:
+        registry:
+          url: ${HTTP_REGISTRY_SCHEMA_SERVER_HOST:"http://localhost:8081"}
